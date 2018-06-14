@@ -16,7 +16,13 @@ moveit_visual_tools: https://github.com/ros-planning/moveit_visual_tools<br/>
 sudo apt-get install ros-kinetic-universal-robot
 sudo apt-get install ros-kinetic-moveit-visual-tools
 ```
+# Installing cobot_visualisation
+Copy the cobot_visualisation folder to your catkin_ws folder. Do catkin_make afterwards.
+```
+catkin_make
+```
 # Running a demo:
+With simulated object detection and a static robot.
 ```
 roslaunch cobot_visualisation ur5_demo
 rosrun cobot_visualisation object_publisher_node
