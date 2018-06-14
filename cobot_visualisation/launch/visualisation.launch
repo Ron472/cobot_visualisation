@@ -1,0 +1,12 @@
+<launch>
+	<include file="$(find ur_gazebo)/launch/ur5.launch"/>
+
+	<include file="$(find ur5_moveit_config	)/launch/ur5_moveit_planning_execution.launch">
+		<arg name="sim" value="true"/>
+	</include>
+
+	<include file="$(find cobot_visualisation)/launch/moveit_ur5_rviz.launch">
+		<arg name="config" value="true"/>
+	</include>
+	<node name="visualisation_node" pkg="cobot_visualisation" type="visualisation_node" output="screen" respawn="false" />
+</launch>
