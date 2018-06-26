@@ -9,11 +9,13 @@ cobot_visualisation (This package)
 
 
 # Required packages:
+The following pacakges are essential for running the cobot_visualisation package:<br/>
 universal_robot: http://wiki.ros.org/universal_robot <br/>
 moveit_visual_tools: https://github.com/ros-planning/moveit_visual_tools<br/>
 <br/>
 **Install for Ubuntu Debian:**
 ```
+sudo apt-get update
 sudo apt-get install ros-kinetic-universal-robot
 sudo apt-get install ros-kinetic-moveit-visual-tools
 ```
@@ -22,7 +24,7 @@ Copy the cobot_visualisation folder to your catkin_ws folder. Do catkin_make aft
 ```
 catkin_make
 ```
-# Running a demo:
+# Running a demo (simulation):
 With simulated object detection and a static robot.
 ```
 roslaunch cobot_visualisation ur5_demo
@@ -36,3 +38,6 @@ Requires that the path planner node is already running. The object detection nod
 rosrun cobot_visualisation distance_node
 rosrun cobot_visualisation visualisation_node
 ```
+
+# Documentation
+More information and documentation about the cobot_visualisation package can be found on the [wiki](https://github.com/Ron472/cobot_visualisation/wiki).
