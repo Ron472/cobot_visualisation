@@ -1,4 +1,5 @@
 # cobot_visualisation
+![banner](https://github.com/Ron472/cobot_visualisation/blob/master/images/banner.png)
 The cobot_visualisation package is part of the cobot safety project. This package will calculate the closest distance between objects and the UR5 robot arm. A stop signal will be sent to the planner node when an object gets too close to the Robot. The package also adds the object and a workcell to the planning scene of MoveIt. The motion planner will try to plan around these objects. The distance between the closest object and the robot will also be visualised in Rviz.<br/>
 <br/>
 **Cobot Safety Project Packages:**<br/>
