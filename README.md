@@ -33,12 +33,14 @@ rosrun cobot_visualisation object_publisher_node
 rosrun cobot_visualisation distance_node
 rosrun cobot_visualisation visualisation_node
 ```
+When all nodes are running add a MarkerArray to the Displays section of RViz and select the topic "/moveit_visual_tools" to visualise the distance between the closest object and the robot.
 # Nodes used for normal operation:
 Requires that the [UR5CobotController package](https://github.com/NielsPeulen/UR5CobotControler) is already running. The [object detection package](https://github.com/StefanCals/ObjectDetection) will provide data for the distance_node. Run the following commands in seperate terminals:
 ```
 rosrun cobot_visualisation distance_node
 rosrun cobot_visualisation visualisation_node
 ```
+The UR5CobotController package will have RViz running. To visualise the distance between the closest object and the robot add a MarkerArray to the Displays section of RViz and select the topic "/moveit_visual_tools".
 
 # Documentation
 More information and documentation about the cobot_visualisation package can be found on the [wiki](https://github.com/Ron472/cobot_visualisation/wiki).<br/>
