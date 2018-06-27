@@ -34,7 +34,7 @@ rosrun cobot_visualisation distance_node
 rosrun cobot_visualisation visualisation_node
 ```
 # Nodes used for normal operation:
-Requires that the path planner node is already running. The object detection node will provide data for the distance_node. Run the following commands in seperate terminals:
+Requires that the [UR5CobotController](https://github.com/NielsPeulen/UR5CobotControler) package is already running. The [object detection package](https://github.com/StefanCals/ObjectDetection) will provide data for the distance_node. Run the following commands in seperate terminals:
 ```
 rosrun cobot_visualisation distance_node
 rosrun cobot_visualisation visualisation_node
