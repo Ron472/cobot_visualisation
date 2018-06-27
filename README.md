@@ -20,8 +20,9 @@ sudo apt-get install ros-kinetic-universal-robot
 sudo apt-get install ros-kinetic-moveit-visual-tools
 ```
 # Installing cobot_visualisation
-Copy the cobot_visualisation folder to your catkin_ws folder. Do catkin_make afterwards.
+Copy the cobot_visualisation folder to your catkin_ws folder. Do catkin_make afterwards to compile the C++ code.
 ```
+cd catkin_ws
 catkin_make
 ```
 # Running a demo (simulation):
