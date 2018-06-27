@@ -26,7 +26,7 @@ cd catkin_ws
 catkin_make
 ```
 # Running a demo (simulation):
-With simulated object detection and a static robot.
+With "simulated" object detection and a static robot. The object_publisher_node will provide objects for the distance node. Run the following commands in seperate terminals:
 ```
 roslaunch cobot_visualisation ur5_demo
 rosrun cobot_visualisation object_publisher_node
@@ -34,7 +34,7 @@ rosrun cobot_visualisation distance_node
 rosrun cobot_visualisation visualisation_node
 ```
 # Nodes used for normal operation:
-Requires that the path planner node is already running. The object detection node will provide data for the distance_node.
+Requires that the path planner node is already running. The object detection node will provide data for the distance_node. Run the following commands in seperate terminals:
 ```
 rosrun cobot_visualisation distance_node
 rosrun cobot_visualisation visualisation_node
