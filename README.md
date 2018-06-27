@@ -26,7 +26,7 @@ cd catkin_ws
 catkin_make
 ```
 # Running a demo (simulation):
-With "simulated" object detection and a static robot. The object_publisher_node will provide objects for the distance node. Run the following commands in seperate terminals:
+With "simulated" object detection and a static robot. The object_publisher_node will provide objects for the distance_node. Run the following commands in seperate terminals:
 ```
 roslaunch cobot_visualisation ur5_demo
 rosrun cobot_visualisation object_publisher_node
